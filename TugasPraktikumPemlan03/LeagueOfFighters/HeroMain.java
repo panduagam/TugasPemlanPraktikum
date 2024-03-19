@@ -1,5 +1,5 @@
 package LeagueOfFighters;
- 
+ // tambahkankondisiagartidakinfiniteloop
 import java.util.Scanner;
 
 public class HeroMain {
@@ -77,6 +77,8 @@ public class HeroMain {
         } while (defense2 < 0 || defense2 > 1000);
 
         Hero champion2 = new Hero(name2, hp2, attack2, defense2);
+
+        
         System.out.print("===================================================================================\n");
         
         System.out.println("Bersiaplah!\n" 
@@ -109,13 +111,13 @@ public class HeroMain {
 
         if(champion1.getHp() <= 0){
             System.out.printf("Pertarungan telah usai!\n"
-                            + "Champion %s telah kalah!\n"
-                            + "Champion %s adalah pemenangnya!\n", champion1.getName(), champion2.getName());            
+                            + "%s telah kalah!\n"
+                            + "%s adalah pemenangnya!\n", champion1.getName(), champion2.getName());            
         }
         else if(champion2.getHp() <= 0){
             System.out.printf("Pertarungan telah usai!\n"
-                            + "Champion %s telah kalah!\n"
-                            + "Champion %s adalah pemenangnya!\n", champion2.getName(), champion1.getName());
+                            + "%s telah kalah!\n"
+                            + "%s adalah pemenangnya!\n", champion2.getName(), champion1.getName());
         }
         
         scn.close();
