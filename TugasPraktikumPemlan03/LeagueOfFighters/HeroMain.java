@@ -94,7 +94,7 @@ public class HeroMain {
                         + "3\n");
         
         int round = 1;
-        double damage = 50;
+        double damage = 0;
         while(champion1.getHp() > 0 && champion2.getHp() > 0){
 
             System.out.println("Round " + round + "\nFight!\n");
