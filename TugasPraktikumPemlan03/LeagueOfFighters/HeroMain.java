@@ -45,6 +45,9 @@ public class HeroMain {
         do {
             System.out.print("Defense \t: ");
             defense1 = scn.nextDouble();
+            if (attack1 < 50 || attack1 > 1000) {
+                System.out.println("Invalid input! Attack harus di antara 50 dan 1000.");
+            }
         } while (defense1 < 50 || defense1 > 1000);
         champion1.setDefense(defense1);
 
