@@ -97,6 +97,7 @@ public class HeroMain {
             System.out.println("Round " + round + "\nFight!\n");
 
             System.out.println(champion1.getName() + " menyerang " + champion2.getName());
+            System.out.println("Health " + champion2.getName() + " saat ini " + champion2.getHp() + "\n");
             System.out.println(champion1.getName() + " menyerang sebesar " + champion1.getAttack());
             System.out.println(champion2.getName() + " memiliki pertahanan sebesar " + champion2.getDefense());
             damage = champion1.getAttack() - champion2.getDefense();
@@ -104,13 +105,15 @@ public class HeroMain {
                 damage = 0;
             }
             champion2.setHp(Math.max(champion2.getHp() - damage, 0));
-            System.out.println("Health " + champion2.getName() + " saat ini " + champion2.getHp() + "\n");
+            System.out.println("Damage yang diterima " + champion2.getName() + " sebesar " + damage);
+            System.out.println("Health " + champion2.getName() + " saat ini menjadi " + champion2.getHp() + "\n");
 
             if (champion2.getHp() == 0) {
                 break;
             }
 
             System.out.println(champion2.getName() + " menyerang " + champion1.getName());
+            System.out.println("Health " + champion1.getName() + " saat ini " + champion1.getHp());
             System.out.println(champion2.getName() + " menyerang sebesar " + champion2.getAttack());
             System.out.println(champion1.getName() + " memiliki pertahanan sebesar " + champion1.getDefense());
             damage = champion2.getAttack() - champion1.getDefense();
@@ -118,10 +121,11 @@ public class HeroMain {
                 damage = 0;
             }
             champion1.setHp(Math.max(champion1.getHp() - damage, 0));
-            System.out.println("Health " + champion1.getName() + " saat ini " + champion1.getHp());
+            System.out.println("Damage yang diterima " + champion1.getName() + " sebesar " + damage);
+            System.out.println("Health " + champion1.getName() + " saat ini menjadi " + champion1.getHp());
 
-            champion1.setDefense(Math.max(champion1.getDefense() - 150, 0));
-            champion2.setDefense(Math.max(champion2.getDefense() - 150, 0));
+            champion1.setDefense(Math.max(champion1.getDefense() - 10, 0));
+            champion2.setDefense(Math.max(champion2.getDefense() - 10, 0));
 
             System.out.println("\n===================================================================================\n");
             round++;
