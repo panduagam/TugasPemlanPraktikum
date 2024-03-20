@@ -135,12 +135,12 @@ public class HeroMain {
             
         }
         
-        if(champion1.getHp() <= 0){
+        if(champion1.getHp() == 0){
             System.out.printf("Pertarungan telah usai!\n"
                             + "%s telah kalah!\n"
                             + "%s adalah pemenangnya!\n", champion1.getName(), champion2.getName());            
         }
-        else if(champion2.getHp() <= 0){
+        else if(champion2.getHp() == 0){
             System.out.println("===================================================================================\n");
             System.out.printf("Pertarungan telah usai!\n"
                             + "%s telah kalah!\n"
