@@ -1,4 +1,4 @@
-package LeagueOfFighters;
+ package LeagueOfFighters;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class HeroMain {
                         + "-> Berikan juga nilai HP (Health Point), Attack, dan Defense untuk kedua Champion.\n"
                         + "-> Untuk bagian angka, Anda hanya bisa memasukkan angka antara 50 hingga 1000.\n"
                         + "-> Jika Anda memasukkan angka yang tidak valid, Anda akan diminta untuk memasukkan angka lagi.\n"
-                        + "-> Setiap selesai satu ronde, defense kedua Champion akan berkurang sebesar 150.\n"
+                        + "-> Setiap selesai satu ronde, defense kedua Champion akan berkurang sebesar 10.\n"
                         + "\n===================================================================================\n");
 
         Hero champion1 = new Hero();
