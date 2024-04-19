@@ -26,7 +26,7 @@ public class TestCase {
         Pekerja sepuh = new Pekerja(5000, 2004, 4, 10, 10, "Kayn", "7890", true, true);
         System.out.println(sepuh);
 
-        Manager pro = new Manager("HRD", 10000, 2009, 4, 9, 3, "Ezreal", "9999", true, 
+        Manager pro = new Manager("HRD", 7500, 2009, 4, 9, 3, "Ezreal", "9999", true, 
         true);
         System.out.println(pro);
     }
