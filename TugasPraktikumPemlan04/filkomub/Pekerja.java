@@ -35,7 +35,7 @@ public class Pekerja extends Manusia {
         this.jumlahAnak = jumlahAnak;
     }
 
-    public double getBonus() {\
+    public double getBonus() {
         int lamaKerja = LocalDate.now().getYear() - tahunMasuk.getYear();
         if (lamaKerja <= 5) {
             return gaji * 0.05;
