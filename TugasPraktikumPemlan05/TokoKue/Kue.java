@@ -3,21 +3,14 @@ package TokoKue;
 public abstract class Kue{
     private String nama;
     private double harga;
+
     public Kue(String nama, double harga){
         this.nama = nama;
         this.harga = harga;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
     public String getNama(){
         return nama;
-    }
-
-    public void setHarga(double harga) {
-        this.harga = harga;
     }
 
     public double getHarga(){
@@ -37,10 +30,6 @@ class KuePesanan extends Kue{
 
     public KuePesanan(String nama, double harga, double berat){
         super(nama, harga);
-        this.berat = berat;
-    }
-
-    public void setBerat(int berat) {
         this.berat = berat;
     }
 
@@ -64,10 +53,6 @@ class KueJadi extends Kue{
 
     public KueJadi(String nama, double harga, double jumlah){
         super(nama, harga);
-        this.jumlah = jumlah;
-    }
-
-    public void setJumlah(double jumlah) {
         this.jumlah = jumlah;
     }
 
