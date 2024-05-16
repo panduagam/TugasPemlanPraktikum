@@ -46,8 +46,8 @@ public class Employee implements Payable{
     }
 
     @Override
-    public double getPayableAmount() {
-        double total = 0;
+    public int getPayableAmount() {
+        int total = 0;
         for (int i = 0; i < invoices.length; i++) {
             total += invoices[i].getPayableAmount();
         }     
@@ -56,9 +56,9 @@ public class Employee implements Payable{
 
     @Override
     public String toString() {
-        return "Nama\t: " + name +
+        return "Nama\t\t\t: " + name +
                 "\nNomor Registrasi\t: " + registrationNumber +
-                "\nGaji per Bulan\t: " + salaryPerMonth + "\n";  
+                "\nGaji per Bulan\t\t: " + salaryPerMonth + "\n";  
     }
 
 }

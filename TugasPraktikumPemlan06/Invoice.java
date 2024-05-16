@@ -36,14 +36,14 @@ public class Invoice implements Payable{
     }
 
     @Override
-    public double getPayableAmount() {
+    public int getPayableAmount() {
         return quantity * pricePerItem;
     }
 
     @Override
     public String toString() {
         return "Nama Produk\t: " + productName +
-                "\nJumlah\t: " + quantity +
-                "\nHarga Satuan\t: " + pricePerItem + "\n";
+                "\nJumlah\t\t: " + quantity +
+                "\nHarga Satuan\t: " + pricePerItem;
     }
 }
