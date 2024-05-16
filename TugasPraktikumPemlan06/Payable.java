@@ -1,5 +1,5 @@
-public package TugasPraktikumPemlan06;
+package TugasPraktikumPemlan06;
 
-interface Payable {
+public interface Payable {
     double getPayableAmount();
 }

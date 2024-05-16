@@ -1,4 +1,5 @@
 package TugasPraktikumPemlan06;
+import java.util.Scanner;
 
 public class Mains {
     public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class Mains {
             System.out.print("Masukkan gaji per bulan Anda\t: ");
             int salaryPerMonth = sc.nextInt();
 
-            employee = new(registrationNumber, name, salaryPerMonth, null);
+            employee = new Employee(registrationNumber, name, salaryPerMonth, null);
 
             System.out.println("Detail identitas Anda : ");
             System.out.println(employee);
